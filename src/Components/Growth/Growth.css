@@ -1,0 +1,133 @@
+.bgcolorblackgrow
+{
+    width: 100%;
+    height: 39vh;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bgcolorblackgrow h1
+{
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    padding-top: 90px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.bgcolorblackgrow span
+
+{
+    color: var(--lightpurple-color);
+    
+}
+.bgcolorblackgrow p{
+
+     color: var(--white-color);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 140%;
+    padding-bottom: 80px;
+}
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px; 
+  background-color: var(--lightpurple-color);
+  border-radius: 2px;
+}
+
+.lightbgcolor
+{
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px; 
+  flex-wrap: wrap;
+  text-align: center;
+}
+.first h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 10px;
+}
+
+.first h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black-color);
+}
+
+@media (max-width: 1024px) {
+  .bgcolorblackgrow h1 {
+    font-size: 36px;
+  }
+  .flexbg {
+    gap: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .bgcolorblackgrow h1 {
+    font-size: 28px;
+  }
+  .bgcolorblackgrow p {
+    font-size: 14px;
+  }
+  .flexbg {
+    flex-direction: column; 
+    gap: 40px;
+  }
+  .first h1 {
+    font-size: 55px;
+  }
+  .first h3 {
+    font-size: 16px;
+  }
+  .lightbgcolor
+{
+    background-color: var(--lightgrey-color);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media (max-width: 480px) {
+  .bgcolorblackgrow h1 {
+    font-size: 22px;
+  }
+  .bgcolorblackgrow p {
+    font-size: 13px;
+  }
+  .first h1 {
+    font-size: 28px;
+  }
+  .first h3 {
+    font-size: 14px;
+  }
+}

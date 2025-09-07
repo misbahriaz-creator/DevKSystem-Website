@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.bgimgtouch {
+  background-image: url('../Images/touch.jpg');
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.touchimgcolor {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 17%;
+}
+
+.emailform h2 {
+  color: var(--white-color);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 160%;
+}
+
+.touchimgcolor span {
+  color: var(--lightpurple-color);
+}
+
+.emailform p {
+  color: var(--white-color);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.inputs input,
+.inputs textarea {
+  width: 1000px;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background-color: var(--white-color);
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--grey-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.inputs input {
+  height: 65px;
+}
+
+.inputs textarea {
+  height: 198px;
+  resize: none;
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+  border: 2px solid var(--lightpurple-color);
+  box-shadow: 0 0 10px rgba(155, 89, 182, 0.6);
+  transform: scale(1.02);
+}
+
+
+.inputs button {
+  width: 1000px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--white-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+ color: #fff;
+  background: linear-gradient(135deg, #6d5dfc, #c850c0);
+  transition: all 0.3s ease;
+  background-size: 800% 800%;
+  animation: gradientMove 6s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputs button:hover {
+  transform: scale(1.05) rotate(-1deg);
+  /* transform: scale(1.05); */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); */
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 992px) {
+  .touchimgcolor h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .touchimgcolor {
+    align-items: center;
+    text-align: center;
+    padding: 0 8%;
+  }
+
+  .inputs input,
+  .inputs textarea,
+  .inputs button {
+    width: 300px;
+  }
+
+  .inputs input { height: 45px; font-size: 13px; }
+  .inputs textarea { height: 158px; font-size: 14px; }
+  .inputs button { height: 45px; font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .touchimgcolor h2 { font-size: 24px; }
+  .touchimgcolor p { font-size: 14px; }
+  .inputs button { font-size: 13px; padding: 12px; }
+}

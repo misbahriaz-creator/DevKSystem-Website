@@ -1,0 +1,218 @@
+/* Footer background */
+.bgfooter {
+  width: 100%;
+  height: 60vh;
+  background-color: var(--black-color);
+}
+
+/* Social icons */
+.fb {
+  color: #1877f2; /* Facebook Blue */
+  cursor: pointer;
+}
+.insta {
+  color: #e1306c; /* Instagram Pink */
+  cursor: pointer;
+}
+.yt {
+  color: #ff0000; /* YouTube Red */
+  cursor: pointer;
+}
+.iconssocial {
+  display: flex;
+  gap: 15px;
+  font-size: 29px;
+}
+
+/* Footer layout */
+.flexfooter {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 80px;
+}
+.footul li {
+  list-style: none;
+}
+.logofoot img {
+  width: 90px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+.leftfoot p {
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  word-spacing: 1px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.flexfooter h2 {
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 27px;
+  word-spacing: 1px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+/* Info section */
+.iflexright {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none; /* remove underline for links */
+  color: var(--white-color); /* default link text color */
+  transition: color 0.3s ease-in-out;
+}
+.iflexright h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+.iflexright:hover h6 {
+  color: #f0f0f0; /* subtle hover effect on text */
+}
+
+.gmail {
+  color: #a50b0b;
+  cursor: pointer;
+  font-size: 18px;
+}
+.locate {
+  color: #0ba3d1;
+  cursor: pointer;
+  font-size: 18px;
+}
+.phone {
+  color: #1aa016;
+  cursor: pointer;
+  font-size: 18px;
+}
+.bgi {
+  background-color: aliceblue;
+  padding: 9px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* List style */
+.footul {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+}
+.footul li {
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* 🌟 Smooth transition for icons */
+.fb, .insta, .yt, .gmail, .locate, .phone {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for icons */
+.fb:hover {
+  transform: scale(1.2);
+  color: #0d65d9;
+  text-shadow: 0 0 8px rgba(24, 119, 242, 0.6);
+}
+.insta:hover {
+  transform: scale(1.2);
+  color: #d6249f;
+  text-shadow: 0 0 8px rgba(225, 48, 108, 0.6);
+}
+.yt:hover {
+  transform: scale(1.2);
+  color: #cc0000;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.gmail:hover {
+  transform: scale(1.2);
+  color: #e60000;
+  text-shadow: 0 0 8px rgba(165, 11, 11, 0.6);
+}
+.locate:hover {
+  transform: scale(1.2);
+  color: #0077b6;
+  text-shadow: 0 0 8px rgba(11, 163, 209, 0.6);
+}
+.phone:hover {
+  transform: scale(1.2);
+  color: #0f7a0f;
+  text-shadow: 0 0 8px rgba(26, 160, 22, 0.6);
+}
+
+/* 🌟 Section hover effect */
+.flexfooter > div {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.flexfooter > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .flexfooter {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .flexfooter {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+  }
+  .bgfooter {
+    width: 100%;
+    height: 120vh;
+    background-color: var(--black-color);
+  }
+  .leftfoot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 28px;
+  }
+  .midfoot,
+  .rightfoot {
+    text-align: left;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .flexfooter h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .logofoot img {
+    width: 70px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .leftfoot p {
+    font-size: 10px;
+  }
+  .iconssocial {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .flexfooter h2 {
+    font-size: 18px;
+  }
+  .footul li {
+    font-size: 14px;
+  }
+  .iconssocial {
+    font-size: 24px;
+  }
+}

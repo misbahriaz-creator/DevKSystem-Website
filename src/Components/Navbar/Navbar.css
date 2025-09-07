@@ -1,0 +1,211 @@
+.navbar img 
+{
+width: 90px;
+height: 70px;
+cursor: pointer;
+
+}
+
+.navbar
+{
+background-color: var(--black-color)!important;
+font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid var(--purple2-color);
+  box-shadow: 0 8px 20px rgba(125, 22, 156, 0.4);
+height: 12vh;
+display: flex!important;
+align-items: center!important;
+justify-content: space-between!important;
+position: fixed;
+/* padding-top: 60px; */
+}
+.menu a
+{
+    color: var(--white-color)!important;
+    font-size: 17px;
+    line-height: 100%;
+    font-weight: 400;
+    cursor: pointer;
+    padding-left: 15px!important;
+    font-family: 'Inter', sans-serif;
+    transform: none;
+    transition: color 0.3s ease-in-out; 
+}
+.menu a:hover
+{
+    cursor: pointer;
+    color: hsl(330, 100%, 50%)!important;
+    text-decoration: underline;
+    text-underline-position: under;
+    /* color: #b3b3b3 !important; */
+}
+.menu:hover a {
+    color: var(--purple2-color) !important; 
+    cursor: pointer;
+}
+.menu a:hover {
+    color: hsl(330, 100%, 50%) !important; /* keep hovered one yellow */
+}
+
+.menu2side a
+{
+    color: var(--purple2-color)!important;
+    font-size: 17px;
+    margin-right: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+.menu2side a:hover{
+    cursor: pointer;
+    color: hsl(330, 100%, 50%)!important;
+
+}
+.icon
+{
+    width: 25px;
+    height: 25px;
+}
+
+.menu2side button
+{
+    font-family: "Growthguy Now Medium", Sans-serif!important;
+    font-size: 18px!important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500!important;
+    text-transform: None;
+    line-height: 100%!important;
+    letter-spacing: 0em;
+    width: 140px;
+    height: 48px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--purple2-color);
+    color: var(--purple2-color);
+    background-color: transparent; 
+}
+.menu2side button:hover
+{
+    background-color: var(--purple2-color);
+    transform: scale(1.05);
+    border: none;
+
+}
+
+.custom-toggler {
+  border: none;  /* removes border */
+  background: transparent;
+  padding: 8px;        /* add clickable area */
+  border-radius: 6px;  /* softer feel */
+}
+
+.custom-toggler:focus {
+  box-shadow: none !important;  /* removes blue outline */
+}
+
+.toggler-icon {
+  color: var(--white-color); /* white bars */
+  font-size: 28px;
+  transition: color 0.3s ease-in-out;
+}
+.custom-toggler:hover .toggler-icon {
+  color: var(--yellow-color); /* highlight bars on hover */
+}
+
+
+@media (max-width: 992px) {
+  .navbar img 
+{
+width: 70px;
+height: 50px;
+cursor: pointer;
+
+}
+
+  /* Collapse Menu Background */
+  .navbar-collapse {
+    position: absolute;
+    top: 12vh;              /* just below navbar */
+    left: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+    border-radius: 0 0 12px 12px;
+    
+  }
+.navbar-collapse.show {
+    max-height: 500px; /* adjust if menu items grow */
+    padding: 20px 0;
+  }
+  /* Menu Links */
+  .menu a {
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+    color: var(--white-color) !important;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu a:hover {
+    color: hsl(330, 100%, 50%) !important;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+  }
+
+  /* Phone + Button Section */
+  .menu2side {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu2side a.phone {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--purple2-color) !important;
+    margin-bottom: 12px;
+  }
+
+  .menu2side button {
+    width: 40%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 12px 0;
+    background-color: transparent;
+    border: 1px solid var(--purple2-color);
+    color: var(--purple2-color);
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu2side button:hover {
+    background-color: var(--purple2-color);
+    transform: scale(1.05);
+  }
+
+  /* Toggler (hamburger icon) */
+  .navbar-toggler,
+  .custom-toggler {
+    border: none !important;
+    outline: none !important;
+    background: transparent;
+    color: var(--purple2-color);
+  }
+
+  .toggler-icon {
+    font-size: 28px;
+    color: var(--purple2-color);
+  }
+}
+
+@media (max-width: 576px) {   /* small mobiles */
+  
+
+  .menu2side button {
+    font-size: 16px !important;
+    height: 42px;
+  }
+}

@@ -1,0 +1,111 @@
+.bgcolorblack {
+  width: 100%;
+  height: 25vh;
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.bgcolorblack h1 {
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.bgcolorblack span {
+  color: var(--lightpurple-color);
+}
+
+.bgcolorblack p {
+  color: var(--white-color);
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 140%;
+}
+
+.images {
+  background-image: url('../Images/projectbg.jpg');
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcolor {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.fleximg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  flex: 1 1 calc(50% - 40px);
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+  max-width: 250px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .bgcolorblack h1 {
+    font-size: 30px;
+  }
+  .bgcolorblack p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .bgcolorblack {
+    height: auto;
+  }
+  .bgcolorblack h1 {
+    font-size: 24px;
+  }
+  .bgcolorblack p {
+    font-size: 14px;
+  }
+}

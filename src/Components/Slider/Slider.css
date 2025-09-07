@@ -1,0 +1,187 @@
+/* Swiper container */
+.mySwiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  background-color: transparent; /* remove dark background from outer slide */
+  display: flex;
+  justify-content: center;       /* center the inner group */
+  align-items: center;
+}
+
+.slide-group {
+  display: flex;                 /* arrange mini-slides in a row */
+  gap: 20px;                      /* space between mini-slides */
+  justify-content: center;
+  width: 100%;
+  transform: translateX(150px);
+  max-width: 1200px;  
+            
+}
+
+/* Mini slides */
+.mini-slide {
+  flex: 1;                        /* each mini-slide takes equal width */
+  min-width: 400px;                /* optional: minimum width */
+  /* max-width: 300px;                optional: maximum width */
+  background-color: var(--white-color);
+  color: #fff;
+  height: 300px;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  font-size: 18px;
+  margin: 0 auto;
+  
+
+  transition: transform 0.3s ease;
+}
+
+.mini-slide:hover {
+  transform: scale(1.05);
+}
+
+.blackslider {
+  background-color: var(--black-color);
+  width: 100%;
+  height: 70vh;
+  padding: 50px 20px;
+}
+
+.flexhead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.flexhead h2{
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.flexhead span {
+  color: var(--lightpurple-color);
+}
+
+.flexhead button {
+  width: 210px;
+  height: 50px;
+  padding: 8px 20px;
+  border-radius: 35px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: #fff;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #a020f0, #ff007f, #00c3ff);
+  background-size: 300% 300%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  animation: gradientShift 6s ease infinite;
+}
+
+.flexhead button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 195, 255, 0.4);
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.flex img
+{
+    width: 50px;
+    height: 50px;
+}
+.divcont h6
+{
+    color: var(--black-color);
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 140%;
+}
+.ic 
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.star
+
+{
+    width: 21px;
+    height: 21px;
+    color: #FFCC24;
+}
+.mini-slide p{
+    color: var(--black-color);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  /* text-align: center; */
+  line-height: 130%;
+  margin-top: 30px;
+  padding-left: 30px;
+}
+.link
+{
+    padding-left: 40px;
+   
+}
+.link2 
+
+{
+    margin-top: 40px;
+    padding-left: 40px;
+}
+
+
+@media (max-width: 992px) {
+  .flexhead h2 {
+    font-size: 32px;
+  }
+  .mini-slide {
+    flex: 1 1 45%;   /* 2 per row on tablets */
+    min-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .flexhead {
+    flex-direction: column;
+    text-align: center;
+  }
+  .flexhead h2 {
+    font-size: 28px;
+  }
+  .mini-slide {
+    flex: 1 1 100%;  
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .flexhead h2 {
+    font-size: 22px;
+  }
+  .flexhead button {
+    width: 160px;
+    height: 45px;
+    font-size: 13px;
+  }
+}

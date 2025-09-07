@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --black-color:black;
+  --white-color:#FFFFFF;
+  --lightpurple-color:#C144F3;
+  --lightgrey-color:#F3F0F2;
+  --darkbrown-color:#191618;
+  --grey-color:#585858;
+  --purple2-color:#9b59b6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Floating Social Icons */
+.social-icons {
+  position: fixed;
+  bottom: 30px; /* above back-to-top */
+  right: 30px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.social-icons a {
+  width: 55px;
+  font-size: 32px; 
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.social-icons a:hover {
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* LinkedIn color */
+.social-icons .linkedin {
+  background-color: #0077b5;
+}
+.social-icons .linkedin:hover {
+  background-color: #005582;
+}
+
+
+/* GitHub color */
+.social-icons .github {
+  background-color: #333;
+}
+.social-icons .github:hover {
+  background-color: #000;
+}
+
+/* Back-to-top */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--lightpurple-color);
+  color: var(--white-color);
+  border:none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+/* WhatsApp color */
+.social-icons .whatsapp {
+  background-color: #25D366; /* WhatsApp Green */
+}
+.social-icons .whatsapp:hover {
+  background-color: #128C7E; /* Darker Green on hover */
 }
