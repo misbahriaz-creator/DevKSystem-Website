@@ -5,7 +5,6 @@ import Project from '../Project/Project'
 import Growth from '../Growth/Growth'
 import Smart from '../Smart/Smart'
 import Making from '../Making/Making'
-import Meetteam from '../Meetteam/Meetteam'
 import Experience from '../Experience/Experience'
 import Touch from '../Touch/Touch'
 import Footer from '../Footer/Footer'
@@ -22,7 +21,7 @@ export default function Landingpage() {
         <Smart/>
         <Making/>
         <Business/>
-        <Meetteam/>
+       
         <Experience/>
         <Touch/>
         <Slider/>
