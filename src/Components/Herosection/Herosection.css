@@ -34,9 +34,10 @@ body {
   padding: 2rem;
 }
 
+/* Headline */
 .bgcolor h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem); /* fluid scaling */
   line-height: 1.3;
   color: #fff;
   font-family: 'Roboto', sans-serif !important;
@@ -53,16 +54,15 @@ body {
   color: #ff007f;
 }
 
-
-
 .bgcolor h1:hover {
   color: #00c3ff;
 }
 
+/* Paragraph */
 .bgcolor p {
   font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.4;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  line-height: 1.5;
   color: #ddd;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
@@ -73,13 +73,14 @@ body {
   color: #fff;
 }
 
+/* Button */
 .bgcolor button {
-  width: 172px;
-  height: 56px;
+  width: clamp(120px, 20vw, 172px);
+  height: clamp(40px, 7vw, 56px);
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
   line-height: 100%;
   color: #fff;
   border: none;
@@ -96,6 +97,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 195, 255, 0.4);
 }
 
+/* Animations */
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -117,29 +119,43 @@ body {
   animation: fadeSlideUp 1s ease-out forwards;
 }
 
-@media (max-width: 800px) {
-  .bgimg {
-  width: 100%;
-  height: 100vh;
-  background-image: url('../Images/herobg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+/* Breakpoints */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
   .bgcolor {
-    /* align-items: center; */
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    padding: 1.5rem;
   }
-  .bgcolor h1 { font-size: 17px; line-height: 130%; }
-  .bgcolor p { font-size: 10px; line-height: 150%; }
-  .bgcolor button { width: 150px; height: 50px; font-size: 15px; }
 }
 
-@media (max-width: 500px) {
-  .bgcolor h1 { font-size: 26px; }
-  .bgcolor p { font-size: 14px; }
-  .bgcolor button { width: 140px; height: 45px; font-size: 14px; }
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .bgcolor {
+    
+  }
+  .bgcolor h1 {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    margin-left: 100px;
+  }
+  .bgcolor p {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .bgcolor {
+    padding: 1rem;
+  }
+  .bgcolor h1 {
+    font-size: clamp(1.2rem, 7vw, 1.6rem);
+  }
+  .bgcolor p {
+    font-size: clamp(0.8rem, 4vw, 0.95rem);
+  }
+  .bgcolor button {
+    width: clamp(110px, 40vw, 140px);
+    height: clamp(35px, 12vw, 45px);
+    font-size: clamp(0.75rem, 3.5vw, 0.9rem);
+  }
 }

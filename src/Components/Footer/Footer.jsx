@@ -74,11 +74,7 @@ export default function Footer() {
           <div className="logofoot">
             <img src={logo} alt="" />
             <p>
-              Devk System ipsum dolor sit amet, consectetur adipiscing<br />
-              elit. Sed do eiusmod tempor incididunt ut labore et dolore<br />
-              magna aliqua. Ut enim ad minim veniam, quis nostrud<br />
-              exercitation ullamco laboris nisi ut aliquip ex ea<br />
-              commodo consequat.
+              DevkSystem by Kashan Afzal Khan is a leading software house offering web design, mobile applications, and custom IT solutions to help businesses grow.
             </p>
             <div className="iconssocial">
               <FaFacebookF ref={addToSocialRefs} className="fb" data-tooltip-id="fb-tip" data-tooltip-content="Follow on Facebook"/>
