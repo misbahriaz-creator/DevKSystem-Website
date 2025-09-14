@@ -130,12 +130,10 @@ body {
 
 /* Mobile (≤ 768px) */
 @media (max-width: 768px) {
-  .bgcolor {
-    
-  }
+  
   .bgcolor h1 {
     font-size: clamp(1.5rem, 6vw, 2.2rem);
-    margin-left: 100px;
+    /* margin-left: 100px; */
   }
   .bgcolor p {
     font-size: clamp(0.85rem, 3vw, 1rem);
