@@ -104,9 +104,9 @@ export default function Business() {
           ))}
           <button><a href="https://wa.me/923139614220">Meet The Team</a></button>
         </div>
-        <div className="back" ref={backRef}>
+        {/* <div className="back" ref={backRef}>
           <img src={pic} alt="Back" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
