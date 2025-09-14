@@ -15,12 +15,12 @@
     height: 450px;
     transform: rotate(2.11deg);
 }
-.back img {
+/* .back img {
     width: 340px;
     height: 400px;
     border: 20px solid var(--white-color);
     transform: rotate(-1.71deg);
-}
+} */
 .mid h1 {
     color: var(--white-color);
     font-family: 'Inter', sans-serif;
