@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import "./Slider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoIosStar } from "react-icons/io";
-import pic1 from "../Images/1.png";
-import pic2 from "../Images/2.png";
+import pic1 from "../Images/pic1,.jpg";
+import pic2 from "../Images/pic2,.jpg";
 import pic3 from "../Images/3.png";
 import pic4 from "../Images/4.png";
 import pic5 from "../Images/5.png";
@@ -15,13 +15,13 @@ import gsap from "gsap";
 const slidesData = [
   {
     img: pic1,
-    name: "Oliver Stent",
-    text: "Grow My Business have set up a new website for my business...",
+    name: "Ahmed",
+    text: "I am extremely happy with Kashan's work. He’s a skilled developer who delivered on time and exceeded expectations. His expertise made the process smooth and efficient. I look forward to working with him again.",
   },
   {
     img: pic2,
-    name: "Suzee Wolstenholme",
-    text: "We chose Grow My Business to do our website as we loved...",
+    name: "Alehaldro",
+    text: "As someone who knows Kashan, I’m impressed by his web development and design skills. His work is top-notch, with exceptional quality and attention to detail. If you're looking for someone who truly excels, Kashan is your top choice.",
   },
   {
     img: pic3,
