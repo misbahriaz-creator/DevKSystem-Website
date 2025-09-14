@@ -1,7 +1,7 @@
 .bgblackbus {
     width: 100%;
     background-color: var(--black-color);
-    height: 70vh;
+    height: auto;
 }
 .flexbus {
     display: flex;
